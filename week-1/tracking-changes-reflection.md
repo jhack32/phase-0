@@ -37,3 +37,7 @@ A pull request helps match up the files on GitHub with your locally stored versi
 
 This keeps the changes that someone has made perviously up to date with their own copy. A team member would be able to get the changes another team member made and work from there. It keeps everyone working on the same copy and updates their copies with the changes other members have made.
 
+## Reflection
+
+It's interesting to work on different branches because I'm able to make changes to the files without affecting the original repo. After I'm done making changes and feel like everything is right, I can merge it with the original repo. I can see the importance of having a branch to work on rather than merging it straight to the master branch. What i did was:
+ create a new branch -> add new file to branch -> make change to file -> commit -> make another change -> commit -> IF done -> push -> then go on repo on github website -> compare and merge -> confirm -> delete branch -> go back to terminal and checkout to master -> pull -> merge
