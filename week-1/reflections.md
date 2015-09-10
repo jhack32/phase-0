@@ -30,4 +30,6 @@ help: shows us a bunch of commands and usage.
 
 ### 1.4 Forking and Cloning Reflection
 
+My instructions would be to go on your account on the github page. After logging in, click the plus symbol on the top right of the page and select New Repository. To fork a repo, you need to go to the repository (repo) page you want to fork and select the fork icon that's below the plus sign you clicked to create a new repo. Once you click that, it'll ask where you want to fork it to and you'll select to whoever you want to fork it to (your own account). To clone a repo, you need to go on the repo page you want to clone and grab the clone URL, which should be on the right side of the screen, below the settings button. You copy that URL and in your terminal you type 'git clone ________' you replace the blank lines with the copied URL. We fork a repository so any changes we make will not effect the original change. This is useful because people can make changes however they want and won't effect the original copy. For example, certain features may be added that others don't like.
 
+I did not have any struggles setting up git and GitHub. I learned how to fork, clone, and create a new repository.
