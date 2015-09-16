@@ -35,3 +35,7 @@ User experience design is, like mentioned in the previous question, helps create
 ## Which parts of the challenge did you find tedious?
 
 None. I felt like all the challenges were fair.
+
+## Reflection
+
+This challenge was interesting. I've never really thought about UX Design and how it worked. It's cool to see and learn about how it has changed from back then. There used to be no research and just create designs based on what looked aesthetic. Now, it's more of accessibility and all about the user. It makes a lot of sense though and obvious.
