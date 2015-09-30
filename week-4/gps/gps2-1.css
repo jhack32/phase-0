@@ -1,0 +1,32 @@
+
+header {
+    background-color: orange;
+}
+
+div.image{
+    content:url(https://assets-cdn.github.com/images/modules/logos_page/Octocat.png);
+    width:50%;
+    height:50%;
+    margin:0 auto;
+}
+
+.column-1 {
+    background-color:red;
+    width: 50%;
+    float:left;
+    font-style: sans-serif, Times;
+    font-weight:bold;
+}
+
+.column-2 {
+    background-color:yellow;
+    width: 50%;
+    float:right;
+    font-style: Verdana, Times;
+    text-decoration:underline;
+}
+
+footer {
+    background-color:green;
+    clear:both;
+}
