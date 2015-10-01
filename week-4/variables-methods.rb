@@ -48,4 +48,13 @@ What was confusing about this material? What made sense?
 
 It all seems pretty straight-forward to me. I think Ruby is very straight forward. For example, the gets will take the input but also takes the empty line (enter) which is why when we add .chomps, it will get rid of the empty line.
 
+
+URLs for the sub-challenges:
+
+4.3.1
+https://github.com/jhack32/phase-0/blob/master/week-4/address/my_solution.rb
+
+4.3.2
+https://github.com/jhack32/phase-0/blob/master/week-4/math/my_solution.rb
+
 =end
