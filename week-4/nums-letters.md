@@ -56,3 +56,18 @@ the local_variable is a local variable to method_one.
 - How was this challenge? Did you get a good review of some of the basics?
 
 This was a good challenge. It was definitely a good review. I had to do some research on local variables and some other stuff. It helped with my understanding of what a local variable is and more.
+
+#Links to 4.2.1 - 4.2.2 - 4.2.3
+
+- 4.2.1
+
+https://github.com/jhack32/phase-0/blob/master/week-4/defining-variables.rb
+
+- 4.2.2
+
+https://github.com/jhack32/phase-0/blob/master/week-4/simple-string.rb
+
+- 4.2.3
+
+https://github.com/jhack32/phase-0/blob/master/week-4/basic-math.rb
+
