@@ -17,6 +17,7 @@ def longest_string(list_of_words)
   return list_of_words[0] if list_of_words.length == 1
   longest_word_while_loop(list_of_words)
 #  longest_word_each_loop(list_of_words)
+#  for_loop(list_of_words)
 end
 
 # method below uses a while loop
@@ -36,6 +37,15 @@ def longest_word_each_loop(array)
   longest = array[0]
   array.each do |word|
     longest = word if word.length > longest.length
+  end
+  return longest
+end
+
+# Method below uses for loop
+def for_loop(array)
+  longest = array[0]
+  for array in array[0..array.length]
+    longest = array unless longest.length > array.length
   end
   return longest
 end
