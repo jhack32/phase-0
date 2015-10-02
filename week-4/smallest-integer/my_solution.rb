@@ -20,4 +20,40 @@ def smallest_integer(list_of_nums)
     smallest = list_of_nums[0]
   end
   return smallest
+# while_loop(list_of_nums)
+#  each_loop(list_of_nums)
+#  until_loop(list_of_nums)
+end
+
+#solved using WHILE loop
+def while_loop(array)
+  num = array[0]
+  while array.length > 1
+    num1 = array.pop
+    if num > num1
+      num = num1
+    end
+  end
+  return num
+end
+
+#solved using a EACH loop
+def each_loop(array)
+  num1 = array[0]
+  array.each do |num|
+    num1 = num if num1 > num
+  end
+  return num1
+end
+
+#solved using until loop
+def until_loop(array)
+  num1 = array[0]
+  until array.empty?
+    num2 = array.shift
+    if num1 > num2
+     num1 = num2
+    end
+  end
+  return num1
 end
