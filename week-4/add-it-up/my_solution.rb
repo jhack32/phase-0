@@ -29,6 +29,16 @@ def total(array)
     sum += x
   end
   return sum
+# for_loop(array)
+end
+
+#for loop
+def for_loop(n)
+  sum = 0
+  for i in n
+   p sum += i
+  end
+  return sum
 end
 
 
@@ -69,7 +79,15 @@ def sentence_maker(array)
   sentence[-2] += "."
   sentence[-1] = ""
   return sentence.capitalize
+
 end
 
 
 # 6. sentence_maker refactored solution
+
+#Put a period with the last word in the array, use join to combine the words in the array with a space, then capitalize the first letter in the sentence.
+
+def sentence_maker(array)
+  array.last << "."
+  sentence = array.join(" ").capitalize
+end
