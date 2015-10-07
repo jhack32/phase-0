@@ -48,9 +48,10 @@ end
 def separate_comma(number)
    p new_num = number.to_s.reverse.gsub(/\d{3}(?=\d)/) {|n| n << "," }.reverse
 end
+
 =begin
 Explanation of what i did:
-I saw my initial solution and thought there had to be an simpler way. I had to convert my number into a string and reverse it so that it would add commas in there correctly. When i reverse it, in a way, I'll be adding commas from the end to the front. Then, i remember reading up on gsub and looked more into it. The example I used as a reference was:
+I converted the number into a string and reversed it so that it would add commas in there correctly. When i reverse it, in a way, I'll be adding commas from the end to the front. Then, i remember reading up on gsub and looked more into it. The example I used as a reference was:
 "hello".gsub(/./) {|s| s.ord.to_s + ' '}
 After figuring out the regex I had to use to find the correct placement, I just added the block of code that would add a comma to every third number, then reversed it back. The d{3} requires 3 digits, and then (?= requires something after it. The \d is any digit, so it will require a digit after the 3 digits to run the block. Then I will reverse it to put the numbers back in its original place.
 =end
