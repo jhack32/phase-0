@@ -53,19 +53,21 @@ def create_acct_group(arr)
 end
 
 #The loop that will run the shuffle and pop X amount of times
-def shuffle_rm_item_loop(loop_k, arr, arr2, count)
-  loop_k.times { arr2[count] << arr.shuffle!.pop }
+def shuffle_rm_item_loop(loop_k, array, group, count)
+  loop_k.times { group[count] << array.shuffle!.pop }
 end
 
 #Calculates the amount that should be in each group
 def amt_in_each_group(array, k)
-  array.length / k.length
+  (array.length / k.length.to_f).ceil
 end
 
-#Decides the number of keys we will need to create a correct amt of groups
+#Decides the number of keys we will need to create a correct amt of groups. It only accounts for one-two drop outs. At two dropout, the last class will have 2 nils in it.
 def num_of_keys(array)
   if (array.length % 5 == 0)
     key_arr = array.length / 5
+  elsif array.length == 53
+    key_arr = (array.length / 5.0).ceil
   else
     key_arr = (array.length / 3.0).ceil
   end
@@ -82,22 +84,22 @@ p create_acct_group(copperheads)
 
 What was the most interesting and most difficult part of this challenge?
 
-
+The most interesting part of the challenge was to remove a person and see how I would be able to add everyone into a group with more than one person. The most difficult was if two people dropped out of the program, then it will give us a
 
 Do you feel you are improving in your ability to write pseudocode and break the problem down?
 
-
+Pseudocode is still giving me some trouble, but it's definitely helping. It's helping me understand what I need to break down and what I'm trying to do. I still have some trouble writing good pseudocode though, so it's something I will probably look into a little more.
 
 Was your approach for automating this task a good solution? What could have made it even better?
 
-
+I think it was good, if no more than 2 people drop out. I could make it even better by probably using a different iteration, and accounting for drop outs. I could probably also add a method or check in where it'll make sure every group has 3 or more people in it.
 
 What data structure did you decide to store the accountability groups in and why?
 
-
+I used a hash to store the accountability group. It allowed me to create numbers (keys) and store the names as values. It was easier to access and input the data. I created arrays for the values, so this would allow me to have multiple names inside.
 
 What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
 
-
+I learned to break the initial solution down into multiple methods so that if i wanted to make some changes to something later on, I'd be able to go into that method and change it, rather than going to the solution itself and changing it up. I'm definitely going to revisit this challenge, and try to improve it before the end of the week.
 
 =end
