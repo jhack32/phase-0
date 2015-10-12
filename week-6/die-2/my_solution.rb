@@ -77,6 +77,6 @@ I didn't learn any new methods but I realized that shuffle wasn't destructive by
 
 What concepts about classes were you able to solidify in this challenge?
 
-The usage of classes, and attr_reader. Attr_reader worked in the first Die class challenge because we were already given an integer that will be the amount of sides we should have. In this challenge, we can't call attr_reader and have it return the # of sides because we have an array with strings as an input instead of a single integer.
+The usage of classes, and attr_reader. Attr_reader worked in the first Die class challenge because we were already given an integer that will be the amount of sides we should have. In this challenge, we can't call attr_reader and have it return the # of sides because we have an array with strings as an input instead of a single integer. Classes is really like a blueprint. The Die class contains everything that you can do with a Die as long as you have a valid input when you make the Die.
 
 =end
