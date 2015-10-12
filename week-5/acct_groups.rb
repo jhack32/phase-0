@@ -47,13 +47,13 @@ def create_acct_group(arr)
   loop_key = amt_in_each_group(arr, keys) #Sets the amt of people in each group to a variable
   keys.each do
     count_of_key += 1
-    shuffle_rm_item_loop(loop_key, arr, acct_group, count_of_key)
+    shuffle_rm_item_loop(loop_key, acct_group, count_of_key, arr)
   end
   acct_group
 end
 
 #The loop that will run the shuffle and pop X amount of times
-def shuffle_rm_item_loop(loop_k, array, group, count)
+def shuffle_rm_item_loop(loop_k, group, count, array)
   loop_k.times { group[count] << array.shuffle!.pop }
 end
 
