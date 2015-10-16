@@ -79,7 +79,7 @@ end
 =begin
 How do instance variables and methods represent the characteristics and behaviors (actions) of a real-world object?
 
-Real-world objects has certain functions just like a class. Methods will be the things we're able to do with the object. Real-world objects like knives can cut things and that could be considered a method. Instance variables are the attributes. It's how sharp the knife or the attributes of the knife. Instance variables in a program are the values/strings/symbols given to it that are used by the methods.
+Real-world objects has certain functions just like a class that has instance variables/methods. Methods will be the things we're able to do with the object. Real-world objects like knives can cut things and that could be considered a method. Instance variables are the attributes. It's how sharp the knife or the attributes of the knife. Instance variables in a program are the values/strings/symbols given to it that are used by the methods.
 
 When should you use instance variables? What do they do for you?
 
