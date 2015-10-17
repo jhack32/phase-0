@@ -84,5 +84,9 @@ What is confusing to you about these methods?
 Nothing at the moment, seems pretty straight-forward. attr_reader will allow us to read (get) the variable, attr_writer allows us to edit the variable (set) and attr_accessor allows us to do both.
 
 
-Release 1:
+Release 1: https://github.com/jhack32/phase-0/blob/master/week-6/attr/release_1.rb
+Release 2: https://github.com/jhack32/phase-0/blob/master/week-6/attr/release_2.rb
+Release 3: https://github.com/jhack32/phase-0/blob/master/week-6/attr/release_3.rb
+Release 4: https://github.com/jhack32/phase-0/blob/master/week-6/attr/release_4.rb
+Release 5: https://github.com/jhack32/phase-0/blob/master/week-6/attr/release_5.rb
 =end
