@@ -1,6 +1,6 @@
 // Separate Numbers with Commas in JavaScript **Pairing Challenge**
 
-// I worked on this challenge with: .
+// I worked on this challenge with: Marie-France Han..
 
 // Pseudocode
 // create a function that accepts an integer
@@ -38,6 +38,21 @@ function separateComma(i) {
 
 // Refactored Solution
 
+function separateComma(i) {
+  var myArray = [];
+  var counter = 3;
+  if (i < 1000) {
+    return i;
+  }
+  else {
+    myArray = i.toString().split('').reverse()
+    while (counter < myArray.length) {
+      myArray.splice(counter, 0, ",")
+      counter += 4
+    }
+    return myArray.reverse().join("")
+  }
+}
 
 
 
