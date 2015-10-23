@@ -17,10 +17,29 @@ console.log(hello + hello_two)
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
 //Looping a Triangle
 
-for (var triangle = "#"; triangle.length <= 7; triangle += "#")
+for (var triangle = "#"; triangle.length <= 7; triangle += "#") {
   console.log(triangle);
+}
 
+for (var num = 0; num <= 100; num++) {
+  if (num % 3 === 0 && num % 5 === 0)
+    console.log("FizzBuzz")
+  else if (num % 3 === 0)
+    console.log("Fizz")
+  else if (num % 5 === 0)
+    console.log("Buzz")
+}
 
+/*
+for (var num = 0; num <= 100; num++) {
+  string = "";
+  if (num % 3 === 0)
+    string += "Fizz"
+  if (num % 5 === 0)
+    string += "Buzz"
+  console.log(string)
+}
+*/
 // Functions
 
 // Complete the `minimum` exercise.
@@ -37,8 +56,8 @@ console.log(min(0,-10));
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
 
 var me = {
-  name: "Jack"
-  age: 23
-  Food: "pizza, sushi, baked ziti"
+  name: "Jack",
+  age: 23,
+  Food: "pizza, sushi, baked ziti",
   quirk: "I put on my left shoe first."
 }
