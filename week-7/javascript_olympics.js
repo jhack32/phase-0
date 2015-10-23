@@ -1,8 +1,8 @@
  // JavaScript Olympics
 
-// I paired [by myself, with:] on this challenge.
+// I paired [Aaron Tsai] on this challenge.
 
-// This challenge took me [#] hours.
+// This challenge took me [1.5] hours.
 
 
 // Warm Up
@@ -11,6 +11,7 @@ var a = function() {
 }
 function a() {
   console.log("Function declaration")
+  console.log ("Constructor function")
 }
 
 
@@ -76,14 +77,14 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 /*
 What JavaScript knowledge did you solidify in this challenge?
 
-
+Everything. I wasn't too sure about functions and syntax of it along with arrays but after doing it in this challenge, i feel like i have a better understanding. I learned what constructor functions/declarations are as well.
 
 What are constructor functions?
 
-
+Constructor functions are functions that are defined by just calling function and the function name. It's preferred when you want to do some work before the Object is created. The constructor object will have properties defined within it and is done by adding a this. in front. The syntax from defining an object in a constructor function vs literal is different.
 
 How are constructors different from Ruby classes (in your research)?
 
-
+Ruby uses Class to create new objects but JavaScript can use constructor functions or literal objects to create new objects. A constructor only contains one method as well whereas Ruby classes can contain multiple methods within the class. The scope of a constructor function is also very limited. The variables created are only available within the scope. If we were to created 2 functions within each other and a variable in function 2, we wouldn't be able to access it in function 1. In ruby, we have class variables that can be accessed anywhere in the Class scope.
 
 */
