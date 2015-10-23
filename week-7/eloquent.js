@@ -30,6 +30,16 @@ for (var num = 0; num <= 100; num++) {
     console.log("Buzz")
 }
 
+/*
+for (var num = 0; num <= 100; num++) {
+  string = "";
+  if (num % 3 === 0)
+    string += "Fizz"
+  if (num % 5 === 0)
+    string += "Buzz"
+  console.log(string)
+}
+*/
 // Functions
 
 // Complete the `minimum` exercise.
