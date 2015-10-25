@@ -153,11 +153,21 @@ var checkWin = function() {
 player.start()
 player.move("forward")
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+/*
+What was the most difficult part of this challenge?
+
+The most difficult part of this challenge was probably figuring out the game. I wanted to make the game more visual and not terminal based but didn't have much time to do it. I'll definitely come back to it though.
+
+What did you learn about creating objects and functions that interact with one another?
+
+I've learned to create multiple functions rather than have one giant one. It was also easier for me to manipulate properties in other objects through other functions. My initial code was all bunched up into the player's move property but once I did what I wanted, I refactored it and made it into different functions.
+
+Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+
+I didn't learn any new built-in methods but I did learn how we can implement the movement in the game and things like that.
+
+How can you access and manipulate properties of objects?
+
+It can be accessed simply by calling the object and then the property (dot/bracket notation). It can be manipulated if we called it and then changed it to something else by using an equal sign or another operator (+=, -=, etc.).
+
+*/
