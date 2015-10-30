@@ -20,7 +20,7 @@ ORDER BY region_id ASC;
 
 #Release 6: Own schema
 
-![Release 6][./outfits-persons-database.png]
+![Release 6][https://github.com/jhack32/phase-0/blob/master/week-8/database-intro/outfits-persons-database.png]
 
 #Release 7: Reflect
 
