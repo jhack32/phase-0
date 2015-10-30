@@ -20,7 +20,7 @@ ORDER BY region_id ASC;
 
 #Release 6: Own schema
 
-![Release 6][outfits-persons-database.png]
+![Release 6][./outfits-persons-database.png]
 
 #Release 7: Reflect
 
