@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jack Huang</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main class="bodywhite">
+      <section class="header">
+        <img src="http://lh5.googleusercontent.com/-MVFl0etcrTw/AAAAAAAAAAI/AAAAAAAAAAA/unBZLkmeD8Q/s192-c/photo.jpg)" alt="Jack Huang" class="selfie" />
+          <h1><span class="name"> Jack Huang</span></h1>
+            <nav>
+            <a href="http://jhack32.github.io">Home</a>
+            <a href="http://jhack32.github.io/about.html">About</a>
+            <a href="http://jhack32.github.io/projects/index.html">Projects</a>
+            <a href="http://jhack32.github.io/resume.html">Resume</a>
+            <a href="http://jhack32.github.io/blog/index.html">Blog</a>
+            </nav>
+      </section>
+        <article class="content">
+          <h2 class="title center">Array and Hashes</h2>
+            <h1 class="subtitle center">Comparison between the two</h1>
+              <h6>October 3, 2015</h6>
+                <section>
+                  <h4 class="question">What is an array/hash?</h4>
+                  <p>
+                    <span class="b">Arrays</span> can be thought of like an ordered list. It has things on the list and is numbered. An array starts from 0. The first item on an array has an index-number of 0. It could also have an array within an array. There could be sub-arrays.</p>
+                    <p>
+<span class="b"> Hashes</span> on the other hand contain a key and a value. Unlike arrays, it's not number indexed. You do not find a value by trying to enter a number unless the key is a number. If you want to get to an item, you can call the hash along with the key. It may look something like
+                      <pre class="code">
+  hash {
+    :keyone => 1,
+    :keytwo => 2
+  }
+  hash[:keyone]</pre>
+                  <h4 class="question">Comparison</h4>
+                  <p>
+                    Arrays are used without a key. It doesn't have a key and a value like a hash. Below example shows an array being created with strings. Then it's calling for the string "zero". You can also retrieve the last item by doing array[-1] which will get the string "two" or array[-2] => "one".
+                    <pre class="code">
+  array = ["zero", "one", "two"]
+  array[0] </pre>
+                     Arrays are called by using an index number like the example above. Hashes on the other hand, are called by using keys.
+                     <pre class="code">
+  hash[:keyone]</pre>
+                     Arrays can have multiple arrays within one array. We cannot have multiple hashes in one hash though. That's what the key's are for. The keys are similar to creating sub-categories. Hashes also return a nil value when the key doesn't exist.
+                     <pre class="code">
+  array = ["zero", ["second-array"], ["third"]]</pre>
+                    Arrays and hashes have their individual uses. Hashes would be used to store things like "person has a dog" or "dog is 2 years old". They require a unique key. The key can't be reused in the same hash. Arrays can store information about a certain category like dogs = [pitbull, beagle, golden retriever]. They don't have a key but retrieved by using an index number starting from 0.
+
+                  </section>
+                </article>
+        <footer>
+          <ul>
+            <li class="footemail">Email</li>
+            <li class="footemail"><a href="mailto:Jack7100@gmail.com">Jack7100@gmail.com</a></li>
+            <li class="footli"><a href="http://www.twitter.com/jhack032"><img src="../imgs/twitter.png" alt="Twitter"></a></li>
+            <li class="footli"><a href="http://www.github.com/jhack32"><img src="../imgs/github.png" alt="Github"></a></li>
+            <li class="footli"><a href="https://www.linkedin.com/pub/jack-huang/bb/244/1b4"><img src="../imgs/linkedin.png" alt="Linkedin"></a></li>
+            <li class="footemail credit"> &copy; 2015 Jack Huang</li>
+          </ul>
+        </footer>
+    </main>
+  </body>
+</html>

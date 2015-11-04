@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jack Huang</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main class="bodywhite">
+      <section class="header">
+        <img src="http://lh5.googleusercontent.com/-MVFl0etcrTw/AAAAAAAAAAI/AAAAAAAAAAA/unBZLkmeD8Q/s192-c/photo.jpg)" alt="Jack Huang" class="selfie" />
+          <h1><span class="name"> Jack Huang</span></h1>
+            <nav>
+            <a href="http://jhack32.github.io">Home</a>
+            <a href="http://jhack32.github.io/about.html">About</a>
+            <a href="http://jhack32.github.io/projects/index.html">Projects</a>
+            <a href="http://jhack32.github.io/resume.html">Resume</a>
+            <a href="http://jhack32.github.io/blog/index.html">Blog</a>
+            </nav>
+      </section>
+        <article class="content">
+          <h2 class="title center">Enumerable Methods</h2>
+            <h1 class="subtitle center">The group_by method, Map method</h1>
+              <h6>October 10, 2015</h6>
+
+                <section>
+                  <h4 class="question">What is the group_by method? </h4>
+                    <p>
+                      It is a Enumerable method. Enumerable is a module that contains multiple methods we can use. The group_by method is similar to a loop. The group_by method takes in a collection of objects and outputs a hash. The keys are the evaluated result and the values are the arrays of the elements (values from the input). It can take a set of numbers (1..6) and go through the loop performing the block of code for each number.</p>
+                      <pre class="code">
+(1..6).group_by {|x| x % 3} <span class="green b"> => {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]} </span></pre>
+                      <p> This is the same example shown in Ruby Docs. It will go through numbers 1-6 and run the block, which is the number modulus 3. The numbers that are divisible by 3 without any remainder, will be in the 0 key (3,6). The group_by method does literally what it's called. It groups the object's it's given into a hash and follows the block of code it's given.
+                  <h4 class="question">What is the map method? </h4>
+                  <p>
+                    The map method is an Enumerable method as well. Map has a destructive (map!) and non-destructive form (map). The destructive form will change the values permanently and a non-destructive form doesn't. It's the same exact method as collect. The difference between the two is the name. People can look at it in two ways. The first would be doing something then collecting the result and the second way would be re-mapping the original object.
+                  </p>
+                  <pre class="code">
+a = [1,2,3,4]
+a.map {|x| x + "..."} <span class="green b"> => ["1...", "2...", "3...", "4..."]</span>
+a <span class="green b"> => [1,2,3,4]</span>
+a.map! {|x| x + "q"} <span class="green b"> => ["1q", "2q", "3q", "4q"]</span>
+a <span class="green b"> => ["1q", "2q", "3q", "4q"]</span>
+                  </pre>
+                  </section></article>
+        <footer>
+          <ul>
+            <li class="footemail">Email</li>
+            <li class="footemail"><a href="mailto:Jack7100@gmail.com">Jack7100@gmail.com</a></li>
+            <li class="footli"><a href="http://www.twitter.com/jhack032"><img src="../imgs/twitter.png" alt="Twitter"></a></li>
+            <li class="footli"><a href="http://www.github.com/jhack32"><img src="../imgs/github.png" alt="Github"></a></li>
+            <li class="footli"><a href="https://www.linkedin.com/pub/jack-huang/bb/244/1b4"><img src="../imgs/linkedin.png" alt="Linkedin"></a></li>
+            <li class="footemail credit"> &copy; 2015 Jack Huang</li>
+          </ul>
+        </footer>
+    </main>
+  </body>
+</html>

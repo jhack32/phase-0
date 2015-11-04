@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jack Huang</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main class="bodywhite">
+      <section class="header">
+        <img src="http://lh5.googleusercontent.com/-MVFl0etcrTw/AAAAAAAAAAI/AAAAAAAAAAA/unBZLkmeD8Q/s192-c/photo.jpg)" alt="Jack Huang" class="selfie" />
+          <h1><span class="name"> Jack Huang</span></h1>
+            <nav>
+            <a href="http://jhack32.github.io">Home</a>
+            <a href="http://jhack32.github.io/about.html">About</a>
+            <a href="http://jhack32.github.io/projects/index.html">Projects</a>
+            <a href="http://jhack32.github.io/resume.html">Resume</a>
+            <a href="http://jhack32.github.io/blog/index.html">Blog</a>
+            </nav>
+      </section>
+        <article class="content">
+          <h2 class="title center">Rubys Regular Expressions</h2>
+              <h6>November 1, 2015</h6>
+                <section>
+                  <h4 class="question">What are regular expressions?</h4>
+                  <p>
+                    <span class="b">Regular Expressions</span> are "patterns which describe the contents of a string." It helps us find a set of characters. </p>
+                  <h4 class="question">What's the usage?</h4>
+                  <p>
+                    Regular expression helps us find/match characters a lot easier. We use symbols in regex that start off with a / and end with /. The symbols are all different and have their own uses. For example, the | symbol would represent OR (similar to ||). \s is for whitespace. </p>
+                    <pre class="code">
+\D = <span class="green b"> Matches anything but a digit</span>
+
+numbers_only = 1234-1232.123213/512321
+numbers_only = numbers_only.to_s.gsub!(/\D/, "")
+puts "Output: #{numbers_only}"
+<span class="green b"> => Output: 1233997595017161 </span>
+</pre>
+                <p> Regular expressions help us find characters we want a lot quicker and easier. It's DRYer as well. We can also edit what we find by replacing/subbing it. Regular expression may be hard to understand at first but will become easier as you start to use it.
+                  </section>
+                </article>
+        <footer>
+          <ul>
+            <li class="footemail">Email</li>
+            <li class="footemail"><a href="mailto:Jack7100@gmail.com">Jack7100@gmail.com</a></li>
+            <li class="footli"><a href="http://www.twitter.com/jhack032"><img src="../imgs/twitter.png" alt="Twitter"></a></li>
+            <li class="footli"><a href="http://www.github.com/jhack32"><img src="../imgs/github.png" alt="Github"></a></li>
+            <li class="footli"><a href="https://www.linkedin.com/pub/jack-huang/bb/244/1b4"><img src="../imgs/linkedin.png" alt="Linkedin"></a></li>
+            <li class="footemail credit"> &copy; 2015 Jack Huang</li>
+          </ul>
+        </footer>
+    </main>
+  </body>
+</html>

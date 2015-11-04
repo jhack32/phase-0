@@ -1,0 +1,28 @@
+* {
+  background-color: #8ac5d8;
+}
+.container {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  border-spacing: 1em;
+}
+
+/* ########################## Column 1-2-3 ####################### */
+
+.column {
+  display: table-cell;
+  border: 1px solid black;
+  padding: 1.4%;
+  border-radius: 1%;
+  box-shadow: 1px 1px 1px black;
+}
+
+/* ########################## Atomic ####################### */
+
+.text { color: #67818a; font-weight: bolder;}
+.width-20 { width: 20%;}
+.bg-whiteish { background: #eef3f4;}
+.bottom-border { border-bottom: 1px solid black;}
+.underline { text-decoration: underline;}
+.c { text-align: center;}

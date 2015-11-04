@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SQL | Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/cheatsheet.css">
+  </head>
+  <body>
+    <h1 class="c"> SQL Cheat Sheet</h1>
+    <main class="container">
+<!--      <table>
+        <tr class="column-1"> Col 1</tr>
+        <tr> Col 2 </tr>
+        <tr> Col 3</tr>
+      </table>
+-->
+      <section class="column bg-whiteish width-20">
+        <h3 class="bottom-border c bg-whiteish">SELECT usage</h3>
+        <p class="bg-whiteish text">Selects all the rows from the table</p>
+        <p class="bg-whiteish"> SELECT * FROM tablename </p>
+        <p class="bg-whiteish text"> Selects from certain fields from the table</p>
+        <p class="bg-whiteish"> SELECT field_name1, field_name2
+          <br>FROM tablename </p>
+        <p class="bg-whiteish text"> Selects from field in the table AND orders it by criteria</p>
+        <p class="bg-whiteish"> SELECT field_name
+          <br> FROM tablename
+            <br>ORDER BY category ASC (ASC or DESC) </p>
+        </section>
+      <section class="column bg-whiteish width-20">
+        <h3 class="bottom-border c bg-whiteish">JOIN usage</h3>
+        <p class="bg-whiteish text">Joins rows from both tables.
+        <p class="bg-whiteish">SELECT table1.field, table2.field
+          <br>FROM table1
+            <br>INNER JOIN table
+              <br>ON table1.id = table2.region_id
+                <br>ORDER BY region_id ASC;
+              </p>
+        <p class="bg-whiteish text">
+      </section>
+      <section class="column bg-whiteish width-20">
+        <h3 class="bottom-border c bg-whiteish"> WHERE usage</h3>
+        <p class="bg-whiteish text">Allows you to select the fieldname from the table in the selected (where) column (fieldname2).</p>
+        <p class="bg-whiteish">SELECT fieldname
+          <br>FROM table
+            <br>WHERE fieldname = "fieldname2"</p>
+      </section>
+    </main>
+  </body>
+</html>

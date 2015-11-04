@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jack Huang</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main class="bodywhite">
+      <section class="header">
+        <img src="http://lh5.googleusercontent.com/-MVFl0etcrTw/AAAAAAAAAAI/AAAAAAAAAAA/unBZLkmeD8Q/s192-c/photo.jpg)" alt="Jack Huang" class="selfie" />
+          <h1><span class="name"> Jack Huang</span></h1>
+            <nav>
+            <a href="http://jhack32.github.io">Home</a>
+            <a href="http://jhack32.github.io/about.html">About</a>
+            <a href="http://jhack32.github.io/projects/index.html">Projects</a>
+            <a href="http://jhack32.github.io/resume.html">Resume</a>
+            <a href="http://jhack32.github.io/blog/index.html">Blog</a>
+            </nav>
+      </section>
+        <article class="content">
+          <h2 class="title center">CSS Concepts</h2>
+            <h1 class="subtitle center">Relative, absolute, fixed, and static positioning</h1>
+              <h6>September 26, 2015</h6>
+
+                <section>
+                  <h4 class="question">What are the differences between relative, absolute, fixed, and static positioning? </h4>
+                    <p>
+                      The position values could get a little confusing. I was confused my first time using the values. I'm going to try my best and explain what each one does.
+                      The <span class="b">relative position</span> places the element in relation to its normal position. So if we were to apply top, bottom, right, left to the element along with position: relative, it will be adjusted away from the normal position.So it'll move from A --> B. Once you have adjusted the element with relative positioning, other elements won't be able to fit into any whitespace (empty space) the element takes up.</p>
+                      <pre class="code"> .randomclass { position: relative; top: 0; bottom: 0; right: 10px; left: 0;}</pre>
+                        <span class="lbr font-sm"> The above code will place the elements with the class (randomclass) in a position relative to the original and move it away 10px to the right.</span>
+                       <p><span class="b">Absolute position</span> is placed at a specific position in relation to the closest element. The position also has the ability to move along with the page if there are no positioned elements (position elements includes everything except static) before it.</p>
+                       <pre class="code"> .randomclass { position:absolute; left: 5px; top: 50px; }</pre>
+                        <span class="lbr font-sm"> The above code will move the element with the class (randomclass) to the LEFT 5px and TOP 50px. It can move the element anywhere you want to.</span>
+                       <p>A <span class="b">fixed position</span> stays in the same place throughout the entire website. If you created a navigation bar and set it to fixed, it will follow you as you scroll down the page.</p>
+                        <pre class="code"> .randomclass {position: fixed; bottom:0; border: 1px solid black; }</pre>
+                        <span class="lbr font-sm"> This sets the element in a fixed position on the bottom with a 1px solid lined black border.</span>
+                        <p>The default position is <span class="b">static</span>. This position isn't affected by the top, bottom, right, left properties. Static is positioned to the flow of the page. Top to bottom from the left.</p>
+                  </section></article>
+        <footer>
+          <ul>
+            <li class="footemail">Email</li>
+            <li class="footemail"><a href="mailto:Jack7100@gmail.com">Jack7100@gmail.com</a></li>
+            <li class="footli"><a href="http://www.twitter.com/jhack032"><img src="../imgs/twitter.png" alt="Twitter"></a></li>
+            <li class="footli"><a href="http://www.github.com/jhack32"><img src="../imgs/github.png" alt="Github"></a></li>
+            <li class="footli"><a href="https://www.linkedin.com/pub/jack-huang/bb/244/1b4"><img src="../imgs/linkedin.png" alt="Linkedin"></a></li>
+            <li class="footemail credit"> &copy; 2015 Jack Huang</li>
+          </ul>
+        </footer>
+    </main>
+  </body>
+</html>
