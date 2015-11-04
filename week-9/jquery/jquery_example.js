@@ -1,7 +1,7 @@
 // U3.W9:JQuery
 
 
-// I worked on this challenge [by myself, with: ].
+// I worked on this challenge [Jay Yee and Jack Huang].
 // This challenge took me [#] hours.
 
 $(document).ready(function(){
@@ -52,14 +52,14 @@ $('img').click(function() {
 /*
 What is jQuery?
 
-
+jQuery is a JavaScript library.
 
 What does jQuery do for you?
 
-
+It makes things easier and simpler to use.
 
 What did you learn about the DOM while working on this challenge?
 
-
+The challenge helped me solidify some concepts like when we try to access something within an id.
 
 */
