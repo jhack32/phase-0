@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jack Huang</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main class="bodywhite">
+      <section class="header">
+        <img src="http://lh5.googleusercontent.com/-MVFl0etcrTw/AAAAAAAAAAI/AAAAAAAAAAA/unBZLkmeD8Q/s192-c/photo.jpg)" alt="Jack Huang" class="selfie" />
+          <h1><span class="name"> Jack Huang</span></h1>
+            <nav>
+            <a href="http://jhack32.github.io">Home</a>
+            <a href="http://jhack32.github.io/about.html">About</a>
+            <a href="http://jhack32.github.io/projects/index.html">Projects</a>
+            <a href="http://jhack32.github.io/resume.html">Resume</a>
+            <a href="http://jhack32.github.io/blog/index.html">Blog</a>
+            </nav>
+      </section>
+        <article class="content">
+          <h2 class="title center">Ruby Classes vs. JavaScript Constructor functions</h2>
+              <h6>October 25, 2015</h6>
+                <section>
+                  <h4 class="question">What is a Ruby class?</h4>
+                  <p>
+                    <span class="b">Ruby Classes</span> was explained in the previous blog. This <a href="ruby-classes.html" class="b">link</a> will bring you to it. It gives a in-depth explanation of what Ruby classes are and what they do. Ruby classes are pretty much like a mother bird protecting their babies. It should contain all the methods for that classes category. An example would be a board class. The board class should contain all methods involving the creation of a board or anything of the sort.</p>
+                      <pre class="code">
+class Board
+  attr_reader :size
+  def initialize(size)
+    @size = size
+  end
+end
+new = Board.new(16)
+new.size <span class="green b"> => 16</span>
+</pre>
+                  <h4 class="question">What is a JavaScript constructor function?</h4>
+                  <p>
+                    Constructor functions are JavaScript objects. It creates a new object and can be created by using "new" like in the example below. The "new" sets the "this" binded to the object. </p>
+                      <pre class="code">
+function theObject() {
+  <span class="green b">this</span>.object = "Object";
+}
+newObj = <span class="green b"> new</span> theObject();
+</pre>
+                  <h4 class="question">The differences</h4>
+                  <p>
+                    JavaScript uses literal notation or constructor functions to create a new object. There are a lot more syntax needed in JavaScript than in Ruby as well. JavaScript requires semicolons and parenthesis but Ruby doesn't require as much.
+                  </p>
+                  <pre class="code">
+<span class="green b">JavaScript</span>
+function myObject() {
+  this.object = "hello";
+}
+
+<span class="green b">Ruby</span>
+Class ObjectOne
+  def initialize(name)
+    @name = name
+  end
+end
+
+</pre>
+                  </section>
+                </article>
+        <footer>
+          <ul>
+            <li class="footemail">Email</li>
+            <li class="footemail"><a href="mailto:Jack7100@gmail.com">Jack7100@gmail.com</a></li>
+            <li class="footli"><a href="http://www.twitter.com/jhack032"><img src="../imgs/twitter.png" alt="Twitter"></a></li>
+            <li class="footli"><a href="http://www.github.com/jhack32"><img src="../imgs/github.png" alt="Github"></a></li>
+            <li class="footli"><a href="https://www.linkedin.com/pub/jack-huang/bb/244/1b4"><img src="../imgs/linkedin.png" alt="Linkedin"></a></li>
+            <li class="footemail credit"> &copy; 2015 Jack Huang</li>
+          </ul>
+        </footer>
+    </main>
+  </body>
+</html>

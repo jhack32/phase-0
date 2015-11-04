@@ -1,0 +1,28 @@
+.blogpostindex {
+list-style:none;
+margin-left:-4%
+}
+
+.title {
+color:#3f6077
+}
+
+.subtitle {
+margin:-1%
+}
+
+.question {
+color:#4b738e
+}
+
+.code {
+  border: 1px solid #ddd;
+  background-color: #2B2B2B;
+  color: #E6E1DC;
+  padding: 7px;
+  overflow: auto;
+  font-size: 12px;
+}
+.green {
+  color: #32CD32;
+}
