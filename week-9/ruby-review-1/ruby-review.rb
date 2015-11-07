@@ -40,7 +40,19 @@ def is_fibonacci?(num)
 end
 
 
-
-
-
 # Reflection
+=begin
+
+What concepts did you review in this challenge?
+
+We reviewed the loops and creating variables. We kept writing in javascript syntax with the semicolons and everything but this challenge helped us review ruby syntax and everything.
+
+What is still confusing to you about Ruby?
+
+I didn't find anything confusing during these challenges. I will definitely go over OOP and working with multiple classes though.
+
+What are you going to study to get more prepared for Phase 1?
+
+Ruby. Ruby. Ruby.
+
+=end
