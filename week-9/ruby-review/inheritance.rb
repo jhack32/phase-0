@@ -55,33 +55,100 @@ end the class
 =end
 
 
-
+#TIME IS YEAR/MONTH/DAY
 # Initial Solution
+require "time"
+require "date"
 
 class GlobalCohort
   #your code here
-  attr_reader :cohort
-  def initialize(name, p0_start_date, immersive_start_date, graduation_date, email)
+attr_reader :ny, :chi, :sf
+  def initialize(name, p0_start_date, immersive_start_date, phase2, graduation_date)
   	@name = name
   	@p0_start_date = p0_start_date
   	@immersive_start_date = immersive_start_date 
-  	@graduation_date = graduation_date 
-  	@email = email
+  	@graduation_date = graduation_date
+  	@phase2 = phase2
+  	@num_of_students = 0
+  	@@ny = []
+  	@chi = []
+  	@sf = []
+  	@email_list = []
   end
-  def organize
-  	@cohort = []
-  	cohort.push(@city, @students, @name, @p0_start_date, @immersive_start_date, @graduation_date,  @email)
+  def add_student(name, city, email)
+  	if city == "ny"
+		@@ny.push([name, email])
+	elsif city == "chi"
+		@chi.push([name, email])
+	elsif city == "sf"
+		@sf.push([name, email])
+	else
+		puts "Sorry, cohort location cannot be found (ny, chi, or sf only)"
+  	end
+  	@email_list.push(email)
+  	@num_of_students += 1
+  end
+  def remove_student(name, city, email)
+  	if city == "ny"
+		@@ny.delete([name, email])
+	elsif city == "chi"
+		@chi.delete([name, email])
+	elsif city == "sf"
+		@sf.delete([name, email])
+	else
+		puts "Sorry, cohort location cannot be found (ny, chi, or sf only)"
+  	end
+  	@email_list.delete(email)
+  	@num_of_students -= 1
+  end
+  def currently_in_phase
+  	if Time.now <= Time.parse(@p0_start_date)
+  		return "Phase 0"
+  	elsif Time.now >= Time.parse(@immersive_start_date)
+  		return "Phase 1"
+  	elsif Time.now >= Time.parse(@immersive_start_date) && Time.now <= Time.parse(@phase2)
+  		return "Phase 2"
+  	elsif Time.now >= Time.parse(@phase2) && Time.now <= Time.parse(@graduation_date)
+  		return "Phase 3"
+  	else
+  		graduated?
+  	end
+  end
+  def graduated?
+  	return Time.now >= Time.parse(@graduation_date) ? "The #{@name} graduated on #{@graduation_date}!" : "The #{@name} have not graduated yet"
+  end
+  def self.show_cohort(location)
+  	if location == "ny"
+  		return @@ny
+  	elsif location == "chi"
+  		return @@chi
+  	elsif location == "sf"
+  		return @@sf
+  	else
+  		return "The location does not exist"
+  	end
   end
 end
 
-class LocalCohort
+class LocalCohort < GlobalCohort
   #your code here
-
+  def initialize(location, start_date)
+  	@location = location
+  	@start_date = start_date
+  end
+  def show(location)
+  	GlobalCohort.show_cohort(location)
+  end
 end
 
-newcohort = GlobalCohort.new("brooklyn", "jack", "copperheads", "9/08/2015", "11/09/2015", "1/22/2015", "jack7100@gmail.com")
-p newcohort.organize
-p newcohort.cohort
+#TIME IS YEAR MONTH DAY
+newcohort = GlobalCohort.new("Copperheads", "2015/09/07", "2015/11/09", "2015/12/21", "2016/01/22")
+newcohort.add_student("Jack", "ny", "Jack7100@gmail.com")
+p newcohort.add_student("A", "ny", "a@a.com")
+p newcohort.remove_student("A", "ny", "a@a.com")
+p newcohort.currently_in_phase
+localcohort = LocalCohort.new("ny", "2015/09/07")
+p localcohort.show("ny")
 # Refactored Solution
 
 
