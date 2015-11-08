@@ -4,14 +4,14 @@
 
 // __________________________________________
 // Write your code below.
-secretNumber = 3
-secretNumber = 7
-password = 'string'
-password = "just open the door"
-allowedIn = true
-allowedIn = false
-members = [1,2,3,4];
-members = ["John","blank","blank","Mary"]
+var secretNumber = 3
+var secretNumber = 7
+var password = 'string'
+var password = "just open the door"
+var allowedIn = true
+var allowedIn = false
+var members = [1,2,3,4];
+var members = ["John","blank","blank","Mary"]
 
 // __________________________________________
 
